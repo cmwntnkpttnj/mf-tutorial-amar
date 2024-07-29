@@ -2,6 +2,7 @@
 
 Commands:
 ng new mono-workspace --create-application=false
+cd mono-workspace
 ng g application host-app --routing --style=scss --ssr=false --standalone=false
 ng g application mfe-app --routing --style=scss --ssr=false --standalone=false
 
@@ -14,5 +15,9 @@ ng add @angular-architects/module-federation --project mfe-app --port 4300
 
 ng g c home --project=host-app
 ng g c todo --project=host-app
+
+ng g module todo-list --project=mfe-app
+ng g c todo-list --project=mfe-app
+
 
 
